@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:background="@android:color/holo_orange_dark">
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/hours"
+                    android:textSize="24dp"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/txthrs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="4"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:tooltipText="Enter the Hours Worked" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/hourly_rate"
+                    android:tooltipText="Enter the rate here"
+                    android:textSize="24dp"/>
+
+                <EditText
+                    android:id="@+id/txtRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="4"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/btnCalc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/pay"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/lblPay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:textSize="24dp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Overtime Pay"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/lblOT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:textSize="24dp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Total Pay"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/lblTotPay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:textSize="24dp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Tax"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/lblTax"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:textSize="24dp" />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+</LinearLayout>
